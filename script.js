@@ -1,21 +1,32 @@
 // Script JS
 
 // ******************************************** Afficher liste des articles
-
-function masquer_tab(id) {
-    if (document.getElementById(id).style.display == 'none') {
-        document.getElementById(id).style.display = 'block';
-    }
-    else {
-        document.getElementById(id).style.display = 'none';
+function afficher_article(){
+    var div = document.querySelector('.articles');
+    var style = div.style.display;
+    if(style == 'none'){
+        div.style.display = 'block';
+    } else {
+    div.style.display = 'none';  
     }
 }
-
-
-
 // ******************************************** Afficher liste des articles
 
+// ******************************************** Afficher liste des articles en stock
+function afficher_article_stock(){
 
+
+}
+// ******************************************** Afficher liste des articles en stock
+
+// ******************************************** Afficher commandes articles
+function commande_article(){
+
+
+
+
+}
+// ******************************************** Afficher commandes articles
 
 // ******************************************** Validation Formulaire
 let loginForm = document.getElementById("loginForm");
@@ -42,5 +53,4 @@ loginForm.addEventListener("submit", (e) => {
         email.value = "";
     }
 });
-
 // ******************************************** Validation Formulaire
