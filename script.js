@@ -20,9 +20,16 @@ function afficher_article_stock(){
 // ******************************************** Afficher liste des articles en stock
 
 // ******************************************** Afficher commandes articles
-function commande_article(){
+function afficher_commande(){
 
-
+    var input = document.querySelector('.liste');
+    var style = input.style.display;
+    if(style == 'block'){
+        input.style.display = 'none';
+    } else {
+       input.style.display = 'block';  
+    }
+}
 
 
 }
@@ -45,7 +52,7 @@ loginForm.addEventListener("submit", (e) => {
         // effectuer une opération à partir d'un formulaire
         alert("Le formulaire a été envoyé avec succès !");
         console.log(" Félicitations pour avoir envoyé votre commande !");
-        console.log(`Ce formulaire a comme nom d'utilisateur ${nom.value}, son adresse est ${adress.value},
+        alert(`Ce formulaire a comme nom d'utilisateur ${nom.value}, son adresse est ${adress.value},
         son numéro de téléphone ${tel.value}, et son email ${email.value}`);
         nom.value = "";
         adress.value = "";
