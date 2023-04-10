@@ -2,19 +2,25 @@
 
 // ******************************************** Afficher liste des articles
 function afficher_article(){
-    var div = document.querySelector('.articles');
-    var style = div.style.display;
-    if(style == 'none'){
-        div.style.display = 'block';
+    var th = document.querySelector('.articles');
+    var style = th.style.display;
+    if(style == 'block'){
+        th.style.display = 'none';
     } else {
-    div.style.display = 'none';  
+    th.style.display = 'block';  
     }
 }
 // ******************************************** Afficher liste des articles
 
 // ******************************************** Afficher liste des articles en stock
 function afficher_article_stock(){
-
+    var a = document.querySelector('.articles_stock');
+    var style = a.style.display;
+    if(style == 'block'){
+        a.style.display = 'none';
+    } else {
+    a.style.display = 'block';  
+    }
 
 }
 // ******************************************** Afficher liste des articles en stock
@@ -22,17 +28,10 @@ function afficher_article_stock(){
 // ******************************************** Afficher commandes articles
 function afficher_commande(){
 
-    var input = document.querySelector('.liste');
-    var style = input.style.display;
-    if(style == 'block'){
-        input.style.display = 'none';
-    } else {
-       input.style.display = 'block';  
-    }
 }
 
 
-}
+
 // ******************************************** Afficher commandes articles
 
 // ******************************************** Validation Formulaire
